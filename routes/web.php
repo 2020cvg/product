@@ -15,8 +15,6 @@ use App\Http\Controllers\StripePaymentController;
 |
 */
   
-Route::get('stripe', [StripePaymentController::class, 'stripe']);
-Route::post('stripe', [StripePaymentController::class, 'stripePost'])->name('stripe.post');
 
 Route::get('/','FrontProductListController@index');
 Route::get('/product/{id}','FrontProductListController@show')->name('product.view');
