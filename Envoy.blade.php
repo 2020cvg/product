@@ -38,6 +38,8 @@ composer install --no-dev
 
 @task('permissions')
 cd /var/www/html/ecom
+chmod -R ug-rwx storage/ bootstrap/cache/
+chown -R www-data storage/ bootstrap/cache/
 echo 'File permissions set successfully'
 @endtask
 
